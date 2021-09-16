@@ -1,59 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--Naming page title-->
 	<title>Contact Form</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->
+<!--=============Select page icon to appear beside page title=============================-->
 	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
+<!--=============Link the font file with html file==============================-->
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
+<!--==============Link the font file with html file=================================================================================-->
 	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
+<!--===============Link the CSS Design file with html file================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 </head>
 <body>
-
-
+    <!--The following class contains all elements of the whole contact form-->
 	<div class="container-contact100">
 		<div class="wrap-contact100">
 			<form class="contact100-form validate-form">
 				<span class="contact100-form-title">
+                    <!--Put the racing team logo on the top right-->
+                     <div class = "image"><img src="images/ASU_Racing_Team.png" alt="" width = "150" height = "150"/></div>
 					CONTACT
-                    <br>
+                    <br><!-- Break the line in order to begin the new line for fan which has header 6-->
                     <h6>Fan? Drop a note</h6>
 				</span>
-
+                <!--The following class for the name section as we notice inside this class there is another class called star
+                    to colour the star to red while the previous class to colour the word to white-->
 				<label class="label-input100" for="name">Name<span class = "star">*</span></label>
+                <!--This class for rhe users whom wtite invalid name-->
 				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
+                    <!--For the initial case we show the user example for name-->
 					<input id="name" class="input100" type="text" name="name" placeholder="Eg. Zeyad Mohamed">
 					<span class="focus-input100"></span>
 				</div>
-
+                <!--The next two lablels as the previous label with same conditions-->
 				<label class="label-input100" for="email">Email<span class = "star">*</span></label>
 				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: example@email.com">
 					<input id="email" class="input100" type="text" name="email" placeholder="Eg. example@email.com">
-					<span class="focus-input100"></span>
-				</div>
-
-				<label class="label-input100" for="phone">phone number</label>
-				<div class="wrap-input100">
-					<input id="phone" class="input100" type="text" name="phone" placeholder="Eg. +20 01033993952">
 					<span class="focus-input100"></span>
 				</div>
 
@@ -62,20 +49,27 @@
 					<textarea id="message" class="input100" name="message" placeholder="Write us a message"></textarea>
 					<span class="focus-input100"></span>
 				</div>
-
+                <!--The next class is responsible for the push button at the bottom of the page-->
 				<div class="container-contact100-form-btn">
 					<button class="contact100-form-btn">
 						Send Message
 					</button>
 				</div>
 			</form>
-
-			<div class="contact100-more flex-col-c-m" style="background-image: url('images/Renault-Formula-E-Racing-Car-HD-Mobile-Wallpaper-950x1520.jpg');">
-                <div class="flex-col size100">
-						<span class="txt0 p-b-0">
-							ASU  Racing Team
-						</span>
-                    </div>
+            <!--Now, we enter the right section so we determine its background image that is formula racing car-->
+			<div class="contact100-more flex-col-c-m" style="background-image: url('images/Formula%20Racing%20Car.jpg');">
+                <!--
+                    The next blocks contain 3 items:
+                    1) Location item and this consists of two elements:
+                       a) The location map marker icon (Class specialized for that)
+                       b) The Location Word
+                    2) Phone item and this consists of two elements:
+                       a) The phone handest icon (Class specialized for that)
+                       b) Our Phone number
+                    3) Email item and this consists of two elements:
+                       a) The Envelope icon (Class specialized for that)
+                       b) Our Contact Email
+                 -->
 				<div class="flex-w size1 p-b-50">
 					<div class="txt1 p-r-25">
 						<span class="lnr lnr-map-marker"></span>
@@ -86,7 +80,8 @@
 							Address
 						</span>
 
-						<span class="txt2">
+						<span class
+                              ="txt2">
 							Cairo, Egypt
 						</span>
 					</div>
@@ -126,41 +121,5 @@
 			</div>
 		</div>
 	</div>
-
-
-
-	<div id="dropDownSelect1"></div>
-
-<!--===============================================================================================-->
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-	<script>
-		$(".selection-2").select2({
-			minimumResultsForSearch: 20,
-			dropdownParent: $('#dropDownSelect1')
-		});
-	</script>
-<!--===============================================================================================-->
-	<script src="vendor/daterangepicker/moment.min.js"></script>
-	<script src="vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-23581568-13');
-	</script>
 </body>
 </html>

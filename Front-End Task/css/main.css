@@ -33,6 +33,8 @@ body, html
 {
 	height: 100%;
 	font-family: Poppins-Regular, sans-serif;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 /*---------------------------------------------*/

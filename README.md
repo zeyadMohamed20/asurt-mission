@@ -68,4 +68,4 @@ e) JavaScript and jquery files
 
 The following image represents Our contact form:
 
-![Contact-Form-Image](D:\asurt-mission\Contact-Form-Image.png)
+![Contact-Form-Image](Contact-Form-Image.png)

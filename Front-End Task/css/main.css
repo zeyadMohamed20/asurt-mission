@@ -33,8 +33,7 @@ body, html
 {
 	height: 100%;
 	font-family: Poppins-Regular, sans-serif;
-    overflow-y: hidden; /* Hide vertical scrollbar */
-    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-x:hidden; /* Hide vertical scrollbar */
 }
 
 /*---------------------------------------------*/
@@ -118,7 +117,7 @@ iframe {
 
 .txt1 {
   font-family: Poppins-Regular;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.2;
   color: #fff;
 }
@@ -126,14 +125,14 @@ iframe {
 .txt2 {
   font-family: Poppins-Regular;
   font-size: 15px;
-  line-height: 1.6;
+  line-height: 1.2;
   color: #999999;
 }
 
 .txt3 {
   font-family: Poppins-Regular;
   font-size: 15px;
-  line-height: 1.6;
+  line-height: 1.2;
   color: #00ad5f;
 }
 
@@ -154,7 +153,7 @@ iframe {
 [ Contact ]*/
 
 .container-contact100 {
-  width: 100%;  
+  width: 100vw;  
   min-height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
@@ -201,7 +200,10 @@ iframe {
   background-position: center;
   position: relative;
   z-index: 1;
-  padding: 0px 15px 0px 15px;
+  padding-top: 20vw;
+  padding-bottom: 15vw;
+  padding-right: 5vw;
+  padding-left: 5vw;
 }
 
 .contact100-more::before 
@@ -230,7 +232,7 @@ iframe {
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
-  padding: 0px 55px 63px 55px;
+  padding: 0px 55px 0px 55px;
 }
 
 .contact100-form-title {
@@ -488,16 +490,11 @@ textarea.input100 {
     opacity: 1;
   }
 }
-.p-b-15 {
-    padding-bottom: 15px;
-}
-.p-b-50 {
-    padding-bottom: 50px;
-}
-.p-r-25 {
-    padding-right: 25px;
-}
 
+.p-b-15 {padding-bottom: 15px;}
+.p-b-50 {padding-bottom: 50px;}
+.p-r-25 {padding-right: 25px;}
+.dis-inline-block {display: inline-block;}
 .dis-flex {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -519,14 +516,6 @@ textarea.input100 {
 	flex-wrap: wrap;
 }
 
-.flex-c {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: flex;
-	justify-content: center;
-}
 
 .flex-col {
 	display: -webkit-box;
@@ -540,6 +529,7 @@ textarea.input100 {
 	-o-flex-direction: column;
 	flex-direction: column;
 }
+
 
 
 .flex-col-c-m {
@@ -557,3 +547,4 @@ textarea.input100 {
 	align-items: center;
 	justify-content: center;
 }
+
